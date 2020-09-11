@@ -74,6 +74,8 @@ function display(list){
 
 display(list);
 
+// Question 4
+
 console.log("<< Object having age less than 30")
 
 function Age() {
