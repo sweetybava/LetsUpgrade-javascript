@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Form</title>
+    <link href="D:\New folder\Courses\Java script\Assignment - 3\Asg - Q1.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <h1><i>Designers</i><img src="https://lh3.googleusercontent.com/proxy/Ako0F0xQuiZWtatVTBdFvI0Yy52dAVR9inFbWeAcmTZ4W6ImH6gUc5Uknq4xAXbMdsVkefWGYr3NEkAJNetT7iDa-DYCSvpTN7iMHm5eUXdiCg3CrOQRNsXihCoFi7mN-taeZ3jd"
+    alt = "Butterfly" class="image"/></h1>
+    <div class="page">
+        <h2><b><strong>Designers List:</strong></b></h2>
+
+        <!-- search input -->
+        <div class="forms">
+            <input type="text" placeholder="Search" id="searchName" onkeyup="searchByName()"/>
+            <img src="https://www.seekpng.com/png/detail/65-659285_search-icon-transparent-background-material-design-magnifying-glass.png"
+            alt="search icon" class="search"/>
+        </div>
+
+        <!-- Form -->
+        <div class="form">
+         <form onsubmit="adddesign(event)">
+             <input type="text" required placeholder="Name" id="name"  />
+             <input type="number" required placeholder="Age" id="age"  />
+             <input type="text" required placeholder="Work" id="work"  />
+             <input type="text" required placeholder="Salary" id="salary"/>
+            <button class ="button" type="submit">Add designer</button>
+         </form>
+        </div>
+        
+        <!-- Form Table -->
+
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+               <tr>
+                   <th>Sr no.</th>
+                   <th>Name</th>
+                   <th>Age</th>
+                   <th>Work</th>
+                   <th>Salary</th>
+                   <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody class="tdata" ></tbody>
+        </table>
+    </div>
+
+    <script src="Asg - Q1.js"></script>
+    
+</body>
+</html>

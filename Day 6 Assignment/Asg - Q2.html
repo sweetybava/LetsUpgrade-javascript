@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Form</title>
+    <link href="D:\New folder\Courses\Java script\Assignment - 3\Asg - Q2.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+    <!-- Header -->
+    
+    <h1><i>Designers</i><img src="https://lh3.googleusercontent.com/proxy/iLUUDrELaI3d63zHKjxfETS-6Fe1CquAuo_E-ofeLf6BMvohGtTF7Q3qOE7COVQep9QJ4X1rRtsmIjsMHStRNAP-2A12CGeY-RMmdMNi9ZLQnmT44wpJyOHOnFV-cP5rGGf9aMKvIkjbkPMa-ClyahcNyu4ifgo"
+    alt = "Butterfly" class="image"/></h1>
+    
+    <!-- Update form details -->
+    
+<div class="modal" onclick="hideModal(event)">
+        <div class="modalchild">
+            <h2><b>Update designer form:</b></h2>
+            <div class="form">
+                <form onsubmit="updatedesign(event)">
+                    <input type="text" required placeholder="Name" id="upname"  />
+                    <input type="number" required placeholder="Age" id="upage"  />
+                    <input type="text" required placeholder="Work" id="upwork"  />
+                    <input type="text" required placeholder="Salary" id="upsalary"/>
+                   <button class ="button" type="submit">Update designer</button>
+                </form>
+            </div>
+        </div>
+</div>
+
+    <!-- Inner header -->
+    
+<div class="page">
+        
+        <h2><b><strong>Designers List:</strong></b></h2>
+
+        <!-- search input -->
+        
+        <div class="forms">
+            <input type="text" placeholder="Search" id="searchName" onkeyup="searchByName()"/>
+            <img src="https://www.seekpng.com/png/detail/65-659285_search-icon-transparent-background-material-design-magnifying-glass.png"
+            alt="search icon" class="search"/>
+        </div>
+
+        <!-- Form -->
+        
+        <div class="form">
+         <form onsubmit="adddesign(event)">
+             <input type="text" required placeholder="Name" id="name"  />
+             <input type="number" required placeholder="Age" id="age"  />
+             <input type="text" required placeholder="Work" id="work"  />
+             <input type="text" required placeholder="Salary" id="salary"/>
+            <button class ="button" type="submit">Add designer</button>
+         </form>
+        </div>
+        
+        <!-- Form Table -->
+
+        <table border="1" class="table" cellspacing="0">
+            <thead>
+               <tr>
+                   <th>Sr no.</th>
+                   <th>Name</th>
+                   <th>Age</th>
+                   <th>Work</th>
+                   <th>Salary</th>
+                   <th>Actions</th>
+               </tr>
+            </thead>
+            <tbody class="tdata" ></tbody>
+        </table>
+</div>
+     
+    <!-- Linking JS -->
+
+<script src="Asg - Q2.js"></script>
+    
+</body>
+</html>
