@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Zone</title>
+    <link href="D:\New folder\Courses\Java script\Assignment - 4\Asg Q1.css" rel="stylesheet" type="text/css"/>
+</head>
+<body>
+    <!-- header,Search button and input -->
+    
+    <div class="header">
+        <h1><b>Girls Fashion</b></h1>
+        <div class="search">
+          <input type="search" onkeyup="searchProduct(this.value)"
+          id="searchValue" placeholder="Search For Products"/>
+        </div>
+        <div class="maximum">
+           <input type="number" onkeyup="searchMaxprod(this.value)"
+           id="searchMaxvalue" placeholder="Maximum Price" />
+        </div>
+        <div class="minimum">
+            <input type="search" id="searchMinvalue" placeholder="Minimum Price" />
+        </div>
+        <div class="carts">
+            <div class="modal" onclick="hideModal(event)">
+                <div class="modalchild">
+
+                    <!-- Add to cart function -->
+
+                    <div class="products">
+                        <div class="productwrapper" id="cart"></div>
+                    </div>
+
+                </div>
+              </div>
+            <button onclick="showModal()" class="cartbutton"><img src="https://www.pngarts.com/files/3/Shopping-Cart-PNG-Background-Image.png"/></button>
+        </div>
+    </div>
+    
+    <!-- product list styles -->
+    
+    <div class="products">
+        <div class="productwrapper"  id="productwrapper">
+             
+        </div>
+    </div>
+
+   
+    
+    <script src="Asg Q1.js"></script>
+</body>
+</html>
